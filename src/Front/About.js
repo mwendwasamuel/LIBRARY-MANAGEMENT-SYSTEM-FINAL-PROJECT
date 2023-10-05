@@ -22,10 +22,8 @@ export default class About extends Component {
                <div className="row footer">
                    <div className="col-sm-4">
                     <h2 className="deve"> <u>Developer</u> </h2>
-                    <h6>Md Rasel Ahmed</h6>
-                    <h6>Mohammad Ali</h6>
-                    <h6>Sazzat Hossain</h6>
-                    <h6>Sanjeda Akter Oyshi</h6>
+                    <h6>Samuel Mbula </h6> 
+                    <h6>Elijah Njora</h6>
                    </div>
                    <div className="col-sm-4">
 
@@ -36,10 +34,10 @@ export default class About extends Component {
                    </div>
                    <div className="col-sm-4">
                    <h2 className="deve"> <u>Contact Us</u> </h2>
-                   <h6>Mirpur 1, Dhaka1216</h6>
-                   <h6>Sukrabad, Dhanmondi</h6>
-                  <p className="deve"> <a  href="https://www.facebook.com/RaaaseL"> <i class="fab fa-facebook-square"></i> </a> </p>
-                  <p className="deve"><i class="fab fa-twitter-square"></i></p> 
+                   <h6>Samuel Mbula</h6>
+                   <h6>Elijah </h6>
+                  <p className="deve"> <a  href="https://www.facebook.com/Asherleeky?mibextid=ZbWKwL"> <i class="fab fa-facebook-square"></i> </a> </p>
+                  <p className="deve"> <a  href="https://twitter.com/LeekyAsher"> <i class="fab fa-twitter-square"></i> </a> </p>
                    </div>
                    </div>
             </div>
