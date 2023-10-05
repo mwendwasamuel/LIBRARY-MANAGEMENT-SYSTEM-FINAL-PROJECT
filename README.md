@@ -112,8 +112,40 @@ We welcome contributions to improve the Library Management System. To contribute
     Push your changes to your fork on GitHub.
     Open a pull request to the main repository.
 
-Please read our contribution guidelines for more details.
-License
+    if you ecounter an error like this,
+    > bioatn@0.1.0 start
+> react-scripts start
+
+node:internal/modules/cjs/loader:1075
+  throw err;
+  ^
+
+Error: Cannot find module 'react'
+Require stack:
+- /home/coder/.nvm/versions/node/v20.3.1/lib/node_modules/react-scripts/scripts/start.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1072:15)
+    at Function.resolve (node:internal/modules/helpers:127:19)
+    at Object.<anonymous> (/home/coder/.nvm/versions/node/v20.3.1/lib/node_modules/react-scripts/scripts/start.js:43:31)
+    at Module._compile (node:internal/modules/cjs/loader:1257:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1311:10)
+    at Module.load (node:internal/modules/cjs/loader:1115:32)
+    at Module._load (node:internal/modules/cjs/loader:962:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/coder/.nvm/versions/node/v20.3.1/lib/node_modules/react-scripts/scripts/start.js'
+  ]
+}
+
+Node.js v20.3.1;
+
+run the following commands;
+nvm install --lts
+nvm use --lts
+npm install react --save
+Then run npm start.
+
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgments
