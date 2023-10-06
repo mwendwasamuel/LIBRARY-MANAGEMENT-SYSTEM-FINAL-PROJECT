@@ -3,7 +3,7 @@ import axios from 'axios'
 import './Css/Teacher.css'
 class Teacher extends Component {
 	constructor(props) {
-		super(props)
+		super(props);
 
 		this.state = {
 			tid: '',
@@ -12,30 +12,41 @@ class Teacher extends Component {
 			mno: '',
 			email: '',
 			success: '',
-		}
+		};
 	}
 
 	changeHandler = e => {
 		this.setState({ [e.target.name]: e.target.value })
 	}
 
-	submitHandler = e => {
-		e.preventDefault()
-		console.log(this.state)
+	submitHandler = (e) => {
+		e.preventDefault();
+		console.log(this.state);
+	
 		axios
-			.post('http://localhost:5000/treg', this.state)
-			.then(response => {
-				console.log(response)
+			.post('http://localhost:5000/treg', this.state, {
+				headers: {
+					'Content-Type': 'application/json',
+				},
 			})
-			.catch(error => {
-				console.log(error)
+			.then((response) => {
+				console.log(response.data); // Log the response data
+				this.setState({
+					tid: '',
+					tname: '',
+					depart: '',
+					mno: '',
+					email: '',
+					success: "Teacher registered successfully!",
+				});
 			})
-			this.setState({
-				success: "Submit To Server"
-			})
-
-	}
-
+			.catch((error) => {
+				console.log(error);
+				this.setState({ success: 'Registration failed. Please try again.' });
+			});
+	};
+	
+	
 	render() {
 		const {  tid, tname, mno, email,depart } = this.state
 		return (

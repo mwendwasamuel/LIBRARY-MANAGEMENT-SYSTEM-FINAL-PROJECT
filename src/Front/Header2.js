@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import About from './About'
 import Teacher from './Teacher'
-import Student from './Sudent'
+import Student from './Student'
 import Search from './Search'
 import Footer from './Footer'
 import Logcss from '../Components/Logcss'

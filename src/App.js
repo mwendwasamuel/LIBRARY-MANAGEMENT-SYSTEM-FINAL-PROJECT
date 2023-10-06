@@ -7,12 +7,12 @@ import Header2 from './Front/Header2';
 import About from './Front/About';
 import Search from './Front/Search';
 import Teacher from './Front/Teacher';
-import Student from './Front/Sudent';
+import Student from './Front/Student';
 import Searchuser from './Components/Searchuser'
 import Manageissue from './Components/Manageissue'
 import Issue from './Components/Issue'
 import Header from './Components/Header'
-import { BrowserRouter as Router,Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 
 function App() {
   return (

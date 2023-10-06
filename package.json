@@ -1,23 +1,25 @@
 {
-  "homepage": "https://ra-sel.github.io/react_library_management/",
+  "homepage": "http://localhost:3000",
   "name": "bioatn",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^1.5.1",
     "bootstrap": "^4.4.1",
-    "mdbreact": "^4.25.1",
+    "cors": "^2.8.5",
+    "mdbreact": "^5.2.0",
     "moment": "^2.24.0",
+    "mysql": "^2.18.1",
     "react": "^16.14.0",
     "react-dom": "^16.12.0",
     "react-filter-search": "^1.0.9",
-    "react-live-clock": "^4.0.3",
+    "react-live-clock": "^6.1.16",
     "react-router-dom": "^5.1.2",
     "react-search": "^2.1.1",
     "reactstrap": "^8.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,6 +41,6 @@
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
-    "react-scripts": "^5.0.1"
+    "react-scripts": "^3.0.1"
   }
 }
